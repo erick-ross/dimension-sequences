@@ -5,7 +5,7 @@ This repository contains code to check certain cases of this type of problem.
 
 
 To run the computations for the full space, one can execute the following. 
-To run these for the new space, just replace `FS` with `NS` in the following commnds.
+To run these for the new space, just replace `FS` with `NS` in the following commands.
 ```
 $ # Search the level-indexed sequences
 $ sage compute.sage search-level FS   
@@ -13,8 +13,8 @@ $ # Search the weight-indexed sequences
 $ sage compute.sage search-weight FS   
 $ # Search the weight-indexed sequences for the sign pattern spaces
 $ sage compute.sage search-sgnpatt-weight FS 
-$ # Show the N for which the density of S2k^sigma(N) is >= 1
-$ sage compute.sage show-densities FS  
-$ # Show the sequences of S2k^sigma(N) which have density 1
-$ sage compute.sage show-density1-seqs FS  
+$ # Display the N for which the density of S2k^sigma(N) is >= 1
+$ sage compute.sage display-densities FS  
+$ # Display the sequences of S2k^sigma(N) which have density 1
+$ sage compute.sage display-density1-seqs FS  
 ```

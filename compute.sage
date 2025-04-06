@@ -11,11 +11,11 @@ def __main__():
         search_weight(is_NS=IS_NS)
     elif ARG == 'search-sgnpatt-weight':
         search_sgnpatt_weight(is_NS=IS_NS)
-    elif ARG == 'show-densities':
-        show_densities(is_NS=IS_NS)
-    elif ARG == 'show-density1-seqs':
+    elif ARG == 'display-densities':
+        display_densities(is_NS=IS_NS)
+    elif ARG == 'display-density1-seqs':
         assert IS_NS == False, 'NS unnecessary here'
-        show_density1_sgnpatt_seqs()
+        display_density1_sgnpatt_seqs()
     elif ARG == 'verify-Tr-Wd-formula':
         N_UB = int(sys.argv[3])
         verify_Tr_Wd_formula(N_UB, is_NS=IS_NS)
@@ -323,11 +323,11 @@ def search_sgnpatt_weight(is_NS=False):
 
 
 
-#### Show density facts claimed in the paper ##########################################
+#### Display the density properties noted in the paper ##########################################
 
 
-def show_densities(is_NS=False):
-    print(f'RUNNING show_densities(is_NS={is_NS})')
+def display_densities(is_NS=False):
+    print(f'RUNNING display_densities(is_NS={is_NS})')
     if is_NS: psi_func = psi_pm
     else:     psi_func = psi
     dens_ge1 = []
@@ -338,7 +338,7 @@ def show_densities(is_NS=False):
             if dens >= 1:
                 print(N, dens)
                 dens_ge1.append(N)
-                if prop == 1:
+                if dens == 1:
                     dens_eq1.append(N)
     print(dens_ge1)
     print(dens_eq1)
@@ -346,8 +346,8 @@ def show_densities(is_NS=False):
 
 
 
-def show_density1_sgnpatt_seqs():
-    print(f'RUNNING show_density1_sgnpatt_seqs()')
+def display_density1_sgnpatt_seqs():
+    print(f'RUNNING display_density1_sgnpatt_seqs()')
     N_vals = [11,14,15]
     for N in N_vals:
         a = 2 * psi(N)
