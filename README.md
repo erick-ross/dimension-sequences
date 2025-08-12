@@ -1,6 +1,6 @@
 # Dimension Sequences
 
-In the paper [Dimension Sequences of Modular Forms](), we investigated when certain families of modular forms spaces can acheive all possible dimensions. This was inspired by a conjecture of Greg Martin in 2004 that `dim S2^new(N)` takes on all possible natural numbers.
+In the paper [Dimension Sequences of Modular Forms](https://arxiv.org/abs/2507.12340), we investigated when certain families of modular forms spaces can acheive all possible dimensions. This was inspired by a conjecture of Greg Martin in 2004 that `dim S2^new(N)` takes on all possible natural numbers.
 This repository contains code to check certain cases of this type of problem.
 
 
